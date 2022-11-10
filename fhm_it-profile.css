@@ -9,7 +9,48 @@
 }
 
 .badge {
-  font-size: 30px;
+  font-size: 15px;
+}
+
+.badge-default {
+  border: none !important;
+}
+
+h2 span {
+  -webkit-text-stroke: 1px var(--pri-color);
+  color: transparent !important;
+}
+
+.button-custom {
+  background-color: transparent;
+  border: 1px solid #ffffff33;
+  color: #fff;
+}
+
+.button-custom:hover {
+  color: #ffffff !important;
+  background-color: #1d2122 !important;
+  border-color: #1d2122;
+}
+
+/* SLIDER */
+
+.banner-tags {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  color: var(--pri-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  padding: 0;
+}
+
+#slider h2 span {
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
 }
 
 /* HEADER */
@@ -40,34 +81,57 @@
 
 /* ABOUT US */
 
-.about-us-text-container {
-  margin-top: 80px;
-}
-
-.about-us-text-container::after {
-  content: "15+ Years";
-  font-weight: bold;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  right: -25%;
-  bottom: -20%;
-  background-color: var(--pri-color);
-  color: #fff;
-
-  z-index: 1;
-}
-
 .about-us-text-container p {
   width: 90%;
 }
 
+.about-us-experience-wrapper {
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.about-us-experience-container {
+  width: 90%;
+  height: 90%;
+  background-color: var(--pri-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us-experience-container p {
+  font-size: 14px;
+}
+
 /* ARCHIVEMENT */
+
+.archivement-container div > i {
+  font-size: 50px;
+  color: var(--pri-color);
+}
+
+.archivement-container div {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.archivement-container div:last-child {
+  border-right: 1px solid #ddd;
+}
+
+.archivement-container div a > i {
+  color: #aaa;
+}
 
 .counter + span {
   font-size: 1.125rem;
@@ -76,13 +140,87 @@
   text-transform: lowercase;
 }
 
+/* FEATURE */
+
+#feature-image-container img:last-child {
+  position: absolute;
+  left: 5%;
+  bottom: -10%;
+  border: 10px solid #fff;
+}
+
+/* CONTACT */
+#contact {
+  background-image: url("https://demo.webtend.net/wp/yankee/wp-content/uploads/2021/01/cta-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 120px 0px 250px 0px;
+  margin-bottom: -330px;
+}
+
+#contact:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#contact h2 {
+  color: #fff;
+}
+
+/* PROJECT */
+
+.grid-filter {
+  border: none;
+}
+
+.grid-filter li a {
+  border: none;
+  border-radius: 0px !important;
+}
+
 /* SKILLS */
 
-.dark,
-.flip-card,
-.flip-card:hover,
-.flip-card-inner,
-.flip-card-back,
-.flip-card-front {
-  border-radius: 0px !important;
+#skills {
+  background-image: url("https://demo.webtend.net/wp/yankee/wp-content/uploads/2021/01/01-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -330px;
+  padding: 250px 0px 80px 0px;
+}
+
+.skills li {
+  margin-top: 80px;
+  height: 8px;
+  background-color: #fff;
+}
+
+.skills li > span {
+  font-size: 18px;
+  top: -27px;
+}
+
+/* FOOTER */
+
+#footer {
+  background-image: url("https://demo.webtend.net/wp/yankee/wp-content/uploads/2021/01/02.png");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border-top: none;
+}
+
+/* COPYRIGHT */
+
+#copyrights {
+  padding: 20px 0;
+  background-color: #f7f6f6;
 }
